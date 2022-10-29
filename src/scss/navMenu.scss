@@ -1,0 +1,128 @@
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    .nav-phone_icon-burger {
+        display: none;
+
+        @media (max-width: $tablet-small) {
+            display: block;
+        }
+    }
+
+    .nav-menu_logo img {
+
+        @media (max-width: $tablet) {
+            max-width: 60px;
+        }
+
+    }
+
+    .nav-menu_list {
+        display: flex;
+        font-weight: $fw-regular;
+
+        .list-item {
+            margin: 0 30px;
+
+            @media (max-width: $tablet-large) {
+                margin: 0 15px;
+            }
+
+            @media (max-width: $tablet) {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: $tablet-small) {
+            display: none;
+        }
+    }
+
+    .nav-menu_list-burger {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $main;
+        color: $white;
+        z-index: -1;
+        transition: $transition;
+
+        .list-item {
+            margin: 30px 0;
+        }
+
+        .nav-menu_burger-close {
+            display: flex;
+            position: absolute;
+            right: 20px;
+            top: 40px;
+        }
+
+        .lang-btn_container button {
+            color: $white;
+            font-size: 22px;
+            margin-top: 70px;
+        }
+
+        @media (max-width: $tablet-small) {
+            display: flex;
+            z-index: 5;
+        }
+    }
+
+    .nav-menu_list-burger.menuOpened {
+        left: 0;
+        display: flex;
+        z-index: 5;
+    }
+
+    .nav-menu_container {
+        display: flex;
+        align-items: center;
+
+        .lang-btn_container, .menu-phone_numbers {
+            padding: 0 15px;
+        }
+
+        .menu-phone_numbers {
+            border-left: 1px solid $black;
+        }
+
+        .menu-phone_numbers {
+            display: flex;
+            flex-direction: column;
+
+            .menu-phone {
+                margin: 5px 0;
+
+                @media (max-width: $tablet) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @media (max-width: $tablet-small) {
+            display: none;
+        }
+    }
+
+    .nav-menu_burger-btn {
+        display: none;
+
+        @media (max-width: $tablet-small) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+// Container
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+// Colors
+
+$main: #1E224B;
+$secondaty: #7AA0F8;
+$third: #C8D8FF24;
+$fourth: #C8D8FF;
+$white: #FFFFFF;
+$black: #000000;
+
+@mixin main-bg-filter {
+    background: linear-gradient(107.44deg, rgba(28, 32, 74, 0.8) 6.84%, rgba(28, 32, 74, 0) 86.05%);
+}
+@mixin services-bg-filter {
+    background: rgb(28, 32, 74, .5);
+}
+
+// Font sizes
+
+$h1: 60px;
+$h2: 50px;
+$h3: 40px;
+$body: 28px;
+$h1-mobile: 40px;
+$h2-mobile: 30px;
+$h3-mobile: 22px;
+$body-mobile: 20px;
+
+// Screen width
+
+$desktop-large: 1960px;
+$desktop: 1650px;
+$laptop: 1450px;
+$tablet-large: 1200px;
+$tablet: 960px;
+$tablet-small: 768px;
+$mobile-large: 640px;
+$mobile: 480px;
+$mobile-small: 360px;
+
+// Font weights 
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-semibold: 600;
+$fw-extrabold: 800;
+
+// Other
+$transition: all .3s ease-in-out;
+$transition-area: all .5s ease-in-out;
