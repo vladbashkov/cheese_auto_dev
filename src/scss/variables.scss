@@ -8,7 +8,7 @@
 // Colors
 
 $main: #1E224B;
-$secondaty: #7AA0F8;
+$secondary: #7AA0F8;
 $third: #C8D8FF24;
 $fourth: #C8D8FF;
 $white: #FFFFFF;
@@ -26,11 +26,15 @@ $black: #000000;
 $h1: 60px;
 $h2: 50px;
 $h3: 40px;
-$body: 28px;
+$subtext: 23px;
 $h1-mobile: 40px;
 $h2-mobile: 30px;
 $h3-mobile: 22px;
-$body-mobile: 20px;
+$subtext-mobile: 18px;
+$button: 18px;
+$info-text: 21px;
+$info-strong: 22px;
+$info-text-mobile: 18px;
 
 // Screen width
 
@@ -52,5 +56,7 @@ $fw-semibold: 600;
 $fw-extrabold: 800;
 
 // Other
+
+$text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 $transition: all .3s ease-in-out;
 $transition-area: all .5s ease-in-out;

@@ -1,0 +1,88 @@
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $white;
+    border-radius: 10px;
+    color: $black;
+    padding: 40px;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.07);
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    max-width: 90%;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-large) {
+        padding: 20px;
+    }
+
+    @media (max-width: $tablet) {
+        position: relative;
+        max-width: none;
+        border-radius: 0;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .info-block {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            text-align: center;
+            margin: 10px 0;
+            width: 100%;
+            border-bottom: 2px solid rgba(30, 34, 75, 0.1);
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .info-icon {
+            max-width: 60px;
+        }
+
+        .info-text_container {
+            margin: 0 15px;
+
+            @media (max-width: $tablet-large) {
+                margin: 0 10px;
+            }
+
+            .text {
+                font-size: $info-text;
+                font-weight: $fw-regular;
+                margin: 10px 0;
+
+                @media (max-width: $tablet-large) {
+                    font-size: $info-text-mobile;
+                }
+
+                @media (max-width: $tablet) {
+                    font-size: $info-text;
+                }
+            }
+
+            .text-strong {
+                font-size: $info-strong;
+                font-weight: $fw-semibold;
+                display: block;
+                margin: 5px 0;
+
+                @media (max-width: $tablet-large) {
+                    font-size: $info-text-mobile;
+                }
+
+                @media (max-width: $tablet) {
+                    font-size: $info-strong;
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+}

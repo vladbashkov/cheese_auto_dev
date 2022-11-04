@@ -1,0 +1,58 @@
+.hero-parallax {
+    background: url('../img/main.png') center / cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    
+    .container {
+        height: calc(100vh - 108px);
+        color: $white;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        * {
+            z-index: 1;
+        }
+
+        @media (max-width: $tablet) {
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    .hero-title {
+        font-size: $h1;
+        font-weight: $fw-extrabold;
+        text-shadow: $text-shadow;
+        margin: 25px 0;
+        max-width: 660px;
+
+        @media (max-width: $tablet-large) {
+            font-size: $h1-mobile;
+        }
+    }
+
+    .hero-subtext {
+        font-size: $subtext;
+        font-weight: $fw-light;
+        margin: 25px 0;
+        max-width: 660px;
+
+        @media (max-width: $tablet-large) {
+            font-size: $subtext-mobile;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        
+        @include main-bg-filter;
+    }
+}
