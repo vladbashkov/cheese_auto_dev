@@ -1,0 +1,63 @@
+.reach-us {
+    padding: 100px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+        .text-container {
+            padding: 0 30px 0 0;
+            width: 50%;
+
+            @media (max-width: $tablet-large) {
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+
+            .reach-us_title {
+                font-size: $h3;
+                font-weight: $fw-semibold;
+                margin-bottom: 25px;
+            }
+    
+            .reach-us_text {
+                font-size: $body-text;
+                line-height: 1.5;
+                margin: 20px 0;
+
+                @media (max-width: $tablet-large) {
+                    text-align: center;
+                }
+
+                @media (max-width: $mobile) {
+                    font-size: $subtext-mobile;
+                } 
+
+                .text-strong {
+                    font-weight: $fw-semibold;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .reach-us_map-container {
+            width: 50%;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+                margin: 30px 0;
+            }
+        }
+    }
+}
