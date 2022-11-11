@@ -17,6 +17,9 @@ $black: #000000;
 @mixin main-bg-filter {
     background: linear-gradient(107.44deg, rgba(28, 32, 74, 0.8) 6.84%, rgba(28, 32, 74, 0) 86.05%);
 }
+@mixin services-bg {
+    background: rgba(200, 216, 255, 0.14);;
+}
 @mixin services-bg-filter {
     background: rgb(28, 32, 74, .5);
 }
