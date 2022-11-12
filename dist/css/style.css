@@ -508,12 +508,18 @@ table {
 .services .container .services-container .service-block .block-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   padding: 30px 5%;
   margin: 10px 0;
   border-radius: 18px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 640px) {
+  .services .container .services-container .service-block .block-header {
+    padding: 15px 5%;
+  }
 }
 .services .container .services-container .service-block .block-header.block-open .block-button .line-vr {
   transform: translate(-50%, -50%) rotate(0deg) !important;
@@ -535,10 +541,21 @@ table {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 640px) {
+  .services .container .services-container .service-block .block-header .block-title {
+    font-size: 26px;
+  }
+}
 .services .container .services-container .service-block .block-header .block-button {
   width: 40px;
   height: 40px;
   position: relative;
+}
+@media (max-width: 640px) {
+  .services .container .services-container .service-block .block-header .block-button {
+    width: 30px;
+    height: 30px;
+  }
 }
 .services .container .services-container .service-block .block-header .block-button .line-vr {
   transform: translate(-50%, -50%) rotate(90deg) !important;
@@ -554,6 +571,12 @@ table {
   z-index: 1;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 640px) {
+  .services .container .services-container .service-block .block-header .block-button .lin-hr, .services .container .services-container .service-block .block-header .block-button .line-vr {
+    width: 30px;
+    height: 3px;
+  }
+}
 .services .container .services-container .service-block .block-content {
   margin: 10px 0;
   padding: 40px 5%;
@@ -568,6 +591,11 @@ table {
   right: 0;
   z-index: 2;
 }
+@media (max-width: 640px) {
+  .services .container .services-container .service-block .block-content {
+    padding: 15px 7%;
+  }
+}
 .services .container .services-container .service-block .block-content.content-open {
   position: relative;
   transform: scaleY(1);
@@ -576,6 +604,11 @@ table {
 .services .container .services-container .service-block .block-content .content-list {
   font-size: 23px;
   list-style: disc;
+}
+@media (max-width: 640px) {
+  .services .container .services-container .service-block .block-content .content-list {
+    font-size: 18px;
+  }
 }
 .services .container .services-container .service-block .block-content .content-list .content-li {
   margin: 10px 0;
@@ -643,6 +676,55 @@ table {
     width: 100%;
     margin: 30px 0;
   }
+}
+
+.gallery_title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.main-carousel {
+  max-width: 600px;
+  margin: 20px auto;
+}
+.main-carousel img {
+  border-radius: 20px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
 }
 
 body {

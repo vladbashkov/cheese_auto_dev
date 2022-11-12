@@ -85,7 +85,6 @@ const serviceList = () => {
         const block = document.createElement('div');
         block.classList.add('service-block');
         '-service_section'
-        // block.style.background = `url("../img/${el.background}-service_section.png") center / cover no-repeat`;
         let list = el.list.map(el => {
             return `<li class="content-li">${el}</li>`;
         })

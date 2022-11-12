@@ -20,13 +20,17 @@
                 .block-header {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     position: relative;
                     padding: 30px 5%;
                     margin: 10px 0;
                     border-radius: 18px;
                     cursor: pointer;
-                    // background: url("../img/maintenance-service_section.png") center / cover no-repeat;
                     transition: $transition;
+
+                    @media (max-width: $mobile-large) {
+                        padding: 15px 5%;
+                    }
 
                     &.block-open {
 
@@ -54,12 +58,21 @@
                         font-weight: $fw-semibold;
                         position: relative;
                         z-index: 2;
+
+                        @media (max-width: $mobile-large) {
+                            font-size: 26px;
+                        }
                     }
 
                     .block-button {
                         width: 40px;
                         height: 40px;
                         position: relative;
+
+                        @media (max-width: $mobile-large) {
+                            width: 30px;
+                            height: 30px;
+                        }
 
                         .line-vr {
                             transform: translate(-50%, -50%) rotate(90deg) !important;
@@ -75,6 +88,11 @@
                             background: $white;
                             z-index: 1;
                             transition: $transition;
+
+                            @media (max-width: $mobile-large) {
+                                width: 30px;
+                                height: 3px;
+                            }
                         }
                     }
                 }
@@ -95,6 +113,10 @@
                     // bottom: 0;
                     z-index: 2;
 
+                    @media (max-width: $mobile-large) {
+                        padding: 15px 7%;
+                    }
+
                     &.content-open {
                         position: relative;
                         transform: scaleY(1);
@@ -104,6 +126,10 @@
                     .content-list {
                         font-size: $subtext;
                         list-style: disc;
+
+                        @media (max-width: $mobile-large) {
+                            font-size: $subtext-mobile;
+                        }
 
                         .content-li {
                             margin: 10px 0;
