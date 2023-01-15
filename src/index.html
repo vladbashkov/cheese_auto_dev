@@ -3,14 +3,16 @@
 	@@include('html/head.html',{
 	"title":"Cheese Auto"
 	})
-	<body>
+	<body class="body-ua">
 		@@include('html/header.html',{})
+		@@include('html/toTopButton.html',{})
 		<main>
 			@@include('html/headerMainSection.html')
 			@@include('html/aboutUsSection.html')
 			@@include('html/servicesSection.html')
 			@@include('html/reachUsSection.html')
 			@@include('html/gallerySection.html')
+			@@include('html/popUp.html')
 		</main>
 		@@include('html/footer.html',{})
 		<script src="js/app.min.js"></script>

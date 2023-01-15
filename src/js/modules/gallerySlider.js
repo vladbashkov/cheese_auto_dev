@@ -23,7 +23,7 @@ const slider = () => {
             fixedHeight: 44,
             },
         },
-    } ).mount();
+    });
 
     main.sync( thumbnails );
     main.mount();

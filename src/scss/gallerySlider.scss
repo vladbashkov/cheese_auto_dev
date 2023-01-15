@@ -1,49 +1,86 @@
-.gallery_title {
-    font-size: $h3;
-    font-weight: $fw-semibold;
-    margin-bottom: 25px;
-}
+.gallery-section {
+    position: relative;
+    padding: 0 0 150px;
 
-.main-carousel {
-    max-width: 600px;
-    margin: 20px auto;
+    @media (max-width: $tablet-small) {
+        padding: 0 0 50px;
+    }
 
-    img {
-        border-radius: 20px;
+    .container {
+
+        .gallery_title {
+            font-size: $h3;
+            font-weight: $fw-semibold;
+            margin-bottom: 25px;
+        }
+        
+        .main-carousel {
+            max-width: 600px;
+            margin: 20px auto;
+        
+            img {
+                border-radius: 20px;
+            }
+        }
+        
+        .splide__slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .splide__slide {
+            opacity: 0.6;
+        }
+        
+        .splide__slide.is-active {
+            opacity: 1;
+        }
+        
+        .thumbnails {
+            display: flex;
+            margin: 1rem auto 0;
+            padding: 0;
+            justify-content: center;
+        }
+        
+        .thumbnail {
+            width: 70px;
+            height: 70px;
+            overflow: hidden;
+            list-style: none;
+            margin: 0 0.2rem;
+            cursor: pointer;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .info-container {
+        text-align: center;
+
+        .block-column {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .text {
+                max-width: 430px;
+            }
+        }
+
+        .info-block {
+            border-bottom: none;
+
+            .maintenance-icon {
+                max-width: 55px;
+                margin: 10px 0;
+            }
+        }
     }
 }
 
-.splide__slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.splide__slide {
-    opacity: 0.6;
-}
-
-.splide__slide.is-active {
-    opacity: 1;
-}
-
-.thumbnails {
-    display: flex;
-    margin: 1rem auto 0;
-    padding: 0;
-    justify-content: center;
-}
-
-.thumbnail {
-    width: 70px;
-    height: 70px;
-    overflow: hidden;
-    list-style: none;
-    margin: 0 0.2rem;
-    cursor: pointer;
-}
-
-.thumbnail img {
-    width: 100%;
-    height: auto;
-}

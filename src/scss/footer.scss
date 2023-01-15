@@ -1,0 +1,116 @@
+.footer {
+    background: $main;
+    color: $white;
+    padding: 150px 0 50px;
+
+    @media (max-width: $tablet) {
+        padding: 100px 0 25px;
+    }
+
+    .container {
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .footer-col {
+                max-width: 400px;
+
+                .footer-logo {
+                    display: none;
+                }
+
+                .footer-brandname {
+                    font-size: $h4;
+                    font-weight: $fw-semibold;
+                }
+
+                .footer-text {
+                    font-size: $subtext-mobile;
+                    font-weight: $fw-light;
+                    margin: 15px 0;
+                }
+
+                .text-strong {
+                    font-weight: $fw-semibold;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .contacts-row {
+                    display: flex;
+                    align-items: center;
+
+                    .phones-container {
+                        margin: 0 0 0 10px;
+
+                        .text-strong {
+                            margin: 10px 0;
+                        }
+                    }
+                }
+
+                .contacts-icon {
+                    margin-right: 10px;
+                }
+            }
+
+            @media (max-width: $tablet) {
+                .footer-col {
+
+                    .footer-brandname {
+                        font-size: $h4-mobile;
+                    }
+
+                    .footer-text {
+                        font-size: $subtext-mobile;
+                        margin: 5px 10px;
+                    }
+                }
+            }
+
+            @media (max-width: $tablet-small) {
+                flex-direction: column;
+                text-align: center;
+
+                .footer-col {
+                    max-width: none;
+                    margin: 20px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: $grey;
+
+                    .footer-logo {
+                        display: block;
+                        max-width: 80px;
+                    }
+
+                    .text-strong {
+                        justify-content: center;
+                        color: $white;
+                    }
+
+                    .footer-brandname, .text-strong {
+                        margin: 20px 0;
+                    }
+    
+                    .contacts-row {
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .contacts-icon {
+                        display: none;
+                    }
+                }
+
+                .text-copyright {
+                    font-size: $copyright-mobile;
+                    color: $grey;
+                }
+            }
+        }
+    }
+}

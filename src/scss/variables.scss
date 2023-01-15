@@ -13,6 +13,7 @@ $third: #C8D8FF24;
 $fourth: #C8D8FF;
 $white: #FFFFFF;
 $black: #000000;
+$grey: #D2D3DA;
 
 @mixin main-bg-filter {
     background: linear-gradient(107.44deg, rgba(28, 32, 74, 0.8) 6.84%, rgba(28, 32, 74, 0) 86.05%);
@@ -29,17 +30,20 @@ $black: #000000;
 $h1: 60px;
 $h2: 50px;
 $h3: 48px;
+$h4: 40px;
 $subtext: 23px;
 $body-text: 26px;
 
 $h1-mobile: 40px;
 $h2-mobile: 30px;
+$h4-mobile: 28px;
 $subtext-mobile: 18px;
 
 $button: 18px;
 $info-text: 21px;
 $info-strong: 22px;
 $info-text-mobile: 18px;
+$copyright-mobile: 12px;
 
 // Screen width
 

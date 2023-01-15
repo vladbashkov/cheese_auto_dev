@@ -1,0 +1,25 @@
+.top-button_container {
+    position: fixed;
+    bottom: 8%;
+    right: 1.5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $main;
+    z-index: 0;
+    visibility: hidden;
+    transition: $transition;
+
+    img {
+        max-width: 25px;
+    }
+
+    &.button-show {
+        bottom: 10%;
+        z-index: 5;
+        visibility: visible;
+    }
+}

@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css">
 	<title>Cheese Auto</title>
 </head>
-	<body>
+	<body class="body-ua">
 		<header class="header">
     <div class="container">
     <nav class="nav-menu">
@@ -34,6 +34,9 @@
                 <a href="#">Як дістатися</a>
             </li>
             <li class="list-item text-hover">
+                <a href="#">Галерея</a>
+            </li>
+            <li class="list-item text-hover">
                 <a href="#">Контакти</a>
             </li>
         </ul>
@@ -42,30 +45,28 @@
                 <img src="img/icons/menu-close.svg" alt="Close menu">
             </button>
             <li class="list-item text-hover">
-                <a href="#">Про нас</a>
+                <a href="#AboutUs">Про нас</a>
             </li>
             <li class="list-item text-hover">
-                <a href="#">Послуги</a>
+                <a href="#Services">Послуги</a>
             </li>
             <li class="list-item text-hover">
-                <a href="#">Як дістатися</a>
+                <a href="#ReachUs">Як дістатися</a>
             </li>
             <li class="list-item text-hover">
-                <a href="#">Контакти</a>
+                <a href="#Footer">Контакти</a>
             </li>
             <div class="lang-btn_container">
-                <button class="lang-btn text-hover" id="langUA">UA</button>
-                <button class="lang-btn text-hover" id="langRU">RU</button>
+                <a href="index-ru.html" class="lang-btn text-hover" id="langRU">RU</a>
             </div>
         </ul>
         <div class="nav-menu_container">
             <div class="lang-btn_container">
-                <button class="lang-btn text-hover" id="langUA">UA</button>
-                <button class="lang-btn text-hover" id="langRU">RU</button>
+                <a href="index-ru.html" class="lang-btn text-hover" id="langRU">RU</a>
             </div>
             <div class="menu-phone_numbers">
                 <a href="tel:+38(073)911-81-01" class="menu-phone text-hover">+38 (073) 911-81-01</a>
-                <a href="tel:+38(098)881-19-11" class="menu-phone text-hover">+38 (098) 881-19-11</a>
+                <a href="tel:+38(098)881-19-11" class="menu-phone text-hover">+38 (098) 88-11-911</a>
             </div>
         </div>
         <button class="nav-menu_burger-btn">
@@ -74,8 +75,11 @@
     </nav>
 </div>
 </header>
+		<a href="#heroParallax" class="top-button_container">
+    <img src="img/icons/arrow.svg" alt="Arrow">
+</a>
 		<main>
-			<div class="hero-parallax">
+			<div class="hero-parallax" id="heroParallax">
     <div class="container">
         <h1 class="hero-title">
             Повний спектр ремонтних робіт автомобіля
@@ -83,9 +87,11 @@
         <p class="hero-subtext">
             Технічне обслуговування та діагностика, шиномонтаж, заміна запчастин
         </p>
-        <button class="contact-button">
-            Замовити консультацію
-        </button>
+        <div class="contact-button_container">
+            <button class="contact-button" id="contactButton">
+                Замовити консультацію
+            </button>
+        </div>
     </div>
     <div class="info-container">
         <div class="info-block">
@@ -126,7 +132,7 @@
         </div>
     </div>
 </div>
-			<div class="about-us">
+			<div class="about-us" id="AboutUs">
     <div class="container">
         <div class="text-container">
             <h3 class="about-us_title">
@@ -134,7 +140,7 @@
             </h3>
             <img src="img/about_us.png" alt="Service man with a car" class="about-us_img-mobile">
             <p class="about-us_text">
-                Ми спеціалізуємося на технічному обслуговуванні, ремонті та продажу автомобільних запчастин до автомобілів провідних світових виробників.</p>
+                Ми спеціалізуємося на технічному обслуговуванні, ремонті та продажі автомобільних запчастин до автомобілів провідних світових виробників.</p>
             <p  class="about-us_text">
                 Ми – гарант якості та надійності.
             </p> 
@@ -147,18 +153,18 @@
         </div>
     </div>
 </div>
-			<div class="services">
+			<div class="services" id="Services">
     <div class="container">
         <div class="text-container">
             <h3 class="services_title">
                 Послуги
             </h3>
-            <div class="services-container">
+            <div class="services-container services-container_ua">
             </div>
         </div>
     </div>
 </div>
-			<div class="reach-us">
+			<div class="reach-us" id="ReachUs">
     <div class="container">
         <div class="text-container">
             <h3 class="reach-us_title">
@@ -227,9 +233,132 @@
             </div>
         </div>
     </div>
+    <div class="info-container">
+        <div class="info-block">
+            <img src="img/icons/maint.svg" alt="Maintenance icon" class="maintenance-icon">
+        </div>
+        <div class="info-block">
+            <div class="info-text_container">
+                <p class="text-strong">
+                    Бажаєте замовити консультацію?
+                </p>
+                <p class="text">
+                    Наші менеджери допоможуть Вам знайти вирішення Вашої проблеми!
+                </p>
+            </div>
+        </div>
+        <div class="info-block">
+            <button class="contact-button">
+                Замовити консультацію
+            </button>
+        </div>
+    </div>
 </section>
+			<div class="pop-up_cover">
+    <div class="pop-up_container">
+        <div class="close-btn_container">
+            X
+        </div>
+        <h4 class="pop-up_title">
+            Залишіть нам Ваші дані для зв'язку з вами!
+        </h4>
+        <form action="#" class="pop-up_form">
+            <input type="text" name="Name" placeholder="Ваше ім'я" class="form-item">
+            <input type="tel" name="Phone" placeholder="Ваш номер телефону" class="form-item">
+            <input type="text" name="Description" placeholder="VIN-код або назва послуги" class="form-item">
+            <button type="submit" class="pop-up_contact-button">
+                Замовити консультацію
+            </button>
+        </form>
+    </div>
+    <div class="pop-up_thanks">
+        <img src="../img/icons/thanks-icon.svg" alt="Icon" class="thanks-icon">
+        <h5 class="thanks-title">
+            Дякуємо за Ваше замовлення!
+        </h5>
+        <p class="thanks-subtitle">
+            Наш менеджер зв'яжеться з Вами у найкоротші терміни!
+        </p>
+        <a href="#" class="thanks-button">
+            Повернутися на головну
+        </a>
+    </div>
+</div>
 		</main>
-		<footer></footer>
+		<footer class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <img src="img/icons/logo-white.svg" alt="Cheese auto logo" class="footer-logo">
+                <h4 class="footer-brandname">
+                    Cheese Auto
+                </h4>
+                <p class="footer-text">
+                    Технічне обслуговування та діагностика, шиномонтаж, заміна запчастин
+                </p>
+                <p class="footer-text">
+                    Ми - гарант якості та надійності
+                </p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-text text-strong">
+                    Графік роботи
+                </p>
+                <p class="footer-text">
+                    Пн - Сб. 09:00-18:00
+                </p>
+                <div class="footer-links">
+                    <a href="#" class="link">
+                        <img src="img/icons/instagram.svg" alt="Інстаграм логотип">
+                    </a>
+                    <a href="#" class="link">
+                        <img src="img/icons/telegram.svg" alt="Телеграм логотип">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p class="footer-text text-strong">
+                    Контакти
+                </p>
+                <div class="contacts-row">
+                    <img src="img/icons/map.svg" alt="Відмітка на мапі" class="contacts-icon">
+                    <p class="footer-text">Адреса: м.Одеса, вул. Паустовського 1А</p>
+                </div>
+                <div class="contacts-row">
+                    <img src="img/icons/phone.svg" alt="Телефонна трубка" class="contacts-icon">
+                    <p class="footer-text">
+                        Тел.:
+                    </p>
+                    <div class="phones-container">
+                        <a href="tel:+38(073)911-81-01" class="text-strong">
+                            +38(073)911-81-01
+                        </a>
+                        <a href="tel:+38(098)881-19-11" class="text-strong">
+                            +38(098)881-19-11
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts-row">
+                    <img src="img/icons/envelop.svg" alt="Поштовий конверт" class="contacts-icon">
+                    <a href="mailto:cheese.auto911@gmail.com" class="footer-text">
+                        E-mail: cheese.auto911@gmail.com
+                    </a>
+                </div>
+                <div class="contacts-row">
+                    <img src="img/icons/inst-small.svg" alt="Логотип інстаграм" class="contacts-icon">
+                    <a href="#" class="footer-text">
+                        Instagram: cheese_auto
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row">
+            <p class="footer-text text-copyright">
+                © 2022. Сайт не є публічною офертою та має інформаційний характер. Всі матеріали цього сайту є об'єктами авторського права (у тому числі дизайн). Забороняється копіювання, розповсюдження (у тому числі шляхом копіювання на інші сайти та ресурси в Інтернеті) або інше використання інформації та об'єктів без попередньої згоди правовласника.
+            </p>
+        </div>
+    </div>
+</footer>
 		<script src="js/app.min.js"></script>
 	</body>
 </html>

@@ -1,4 +1,5 @@
-const servicesContainer = document.querySelector('.services-container');
+const servicesContainer = document.querySelector('.services-container_ua');
+
 const data = [
     {
         title: 'Технічне обслуговування',
@@ -84,13 +85,12 @@ const serviceList = () => {
     data.forEach(el => {
         const block = document.createElement('div');
         block.classList.add('service-block');
-        '-service_section'
         let list = el.list.map(el => {
             return `<li class="content-li">${el}</li>`;
         })
 
         block.innerHTML = `
-            <div class="block-header" style="background: url('../img/${el.background}-service_section.png') center / cover no-repeat">
+            <div class="block-header" style="background: url('img/${el.background}-service_section.png') center / cover no-repeat">
                 <div class="block-title">
                     ${el.title}
                 </div>
@@ -99,7 +99,7 @@ const serviceList = () => {
                     <div class="line-vr"></div>
                 </div>
             </div>
-            <div class="block-content">
+            <div class="block-content" onclick="${function click(e) {console.log(e.target.value)}}">
                 <ul class="content-list">
                     ${list.join('')}
                 </ul>
@@ -116,9 +116,6 @@ const serviceList = () => {
 
     buttonArr.forEach((el, i) => {
         el.addEventListener('click', () => {
-            // console.log(i);
-            // console.dir(el);
-            // console.dir(contentArr[i]);
             contentArr[i].classList.contains('content-open') ? contentArr[i].classList.remove('content-open') : contentArr[i].classList.add('content-open');
             el.classList.contains('block-open') ? el.classList.remove('block-open') : el.classList.add('block-open');
         })

@@ -2,6 +2,7 @@
 @import "variables";
 @import "navMenu";
 @import "headerParallax";
+@import "toTopButton";
 @import "contactButton";
 @import "headerParallax";
 @import "infoContainer";
@@ -9,10 +10,17 @@
 @import "servicesSection";
 @import "reachUs";
 @import "gallerySlider";
+@import "popUp";
+@import "footer";
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
+	scroll-behavior: smooth;
+
+	* {
+		box-sizing: border-box;
+	}
 
 	.text-hover {
 		transition: $transition;
