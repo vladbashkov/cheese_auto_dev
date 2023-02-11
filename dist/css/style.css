@@ -269,10 +269,8 @@ table {
   display: none;
 }
 
-.no-webp .hero-parallax {
-  background: url("../img/main.png") center/cover no-repeat; }
-
 .hero-parallax {
+  background: url("../img/main.JPG") center/cover no-repeat;
   background-attachment: fixed;
   position: relative;
 }
@@ -377,10 +375,8 @@ table {
           box-shadow: 3px 3px 7px #FFFFFF;
 }
 
-.no-webp .hero-parallax {
-  background: url("../img/main.png") center/cover no-repeat; }
-
 .hero-parallax {
+  background: url("../img/main.JPG") center/cover no-repeat;
   background-attachment: fixed;
   position: relative;
 }
@@ -532,6 +528,7 @@ table {
 
 .about-us .container .img-container .about-us_img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .services {
@@ -714,6 +711,12 @@ table {
   width: 50%;
 }
 
+.reach-us .container .reach-us_video {
+  margin: 50px auto 0;
+  border-radius: 20px;
+  max-width: 50%;
+}
+
 .gallery-section {
   position: relative;
   padding: 0 0 150px;
@@ -732,6 +735,7 @@ table {
 
 .gallery-section .container .main-carousel img {
   border-radius: 20px;
+  max-height: 600px;
 }
 
 .gallery-section .container .splide__slide img {
@@ -1383,9 +1387,5 @@ body .text-hover:hover {
     font-size: 18px;
   }
 }
-
-.webp .hero-parallax { background: url(../img/main.webp) center/cover no-repeat; }
-
-.webp .hero-parallax { background: url(../img/main.webp) center/cover no-repeat; }
 
 .webp .pop-up_cover .pop-up_container { background: url(../img/pop-up.webp) center/cover no-repeat; }
